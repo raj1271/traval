@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Healthy LifeStyle</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>	
+	<link rel="stylesheet" type="text/css" href="Master.css">
+	<script type="text/javascript" src="Contact.js"></script>
+
+	<style type="text/css">
+		label{
+			font-weight: bolder;
+			font-size: 18px;
+		}
+
+		span{
+			font-style: italic;
+			color: red;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body style="background:black">
+	<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+				<a href="home.html"><img src="img/logo.jpg" class="img-fluid mx-auto" height="70" width="170"></a>
+			</div>
+			
+			<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search...." style="border-radius:60px; background:black; border:2px solid green">
+							<button class="btn btn-dark" type="submit" style="border-radius:10px; background:green;color:black; border:2px solid green"><b>Q</b></button>
+						</div>
+					</form>
+			</div>
+		</div>
+	</div>
+</header>
+
+<nav class="navbar navbar-expand-md navbar-light sticky-top" style="border-radius:60px; background:green">
+		<div class="container-fluid">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link"  href="Home.html" style="width: 110px; text-align: center; color: black;"><b>Home</b></a></li>
+					<li class="nav-item"><a class="nav-link"  href="Konkan.html" style="width: 110px; text-align: center; color: black;"><b>Konkan</b></a></li>
+					<li class="nav-item"><a class="nav-link"  href="Pune.html" style="width: 110px; text-align: center; color: black;"><b>Pune</b></a></li>
+					<li class="nav-item"><a class="nav-link"  href="Marathvada.html" style="width: 110px; text-align: center; color: black;"><b>Marathvada</b></a></li>
+					<li class="nav-item"><a class="nav-link"  href="Nashik.html" style="width: 110px; text-align: center; color: black;"><b>Nashik</b></a></li>
+					<li class="nav-item"><a class="nav-link"  href="Vidarbha.html" style="width: 110px; text-align: center; color: black;"><b>Vidarbha</b></a></li>
+					<li class="nav-item"><a class="nav-link"  href="Amravati.html" style="width: 110px; text-align: center; color: black;"><b>Amravati</b></a></li>
+					<li class="nav-item active" style="font-size: 17px"><a class="nav-link"  href="SUGGESTIONS.html" style="width: 110px; text-align: center; color: green; border-radius:20px; background:black"><b>CONTACT</b></a></li>
+					
+					</ul>
+			</div>	
+		</div>
+	</nav><br>
+
+	<section>
+	
+		<div class="container">
+			<div class="contact" style="border:3px solid  #77b300; border-radius: 20px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h3 style="text-align: center; padding-top: 15px;color:darkgray ">To know About more places<br>Please Fill out the below details.</h3><br>
+					</div><br><br>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mx-auto">
+						<form class="form-inline"  name="form1" class="frm_message" method="post" autocomplete="off" onsubmit="return Reg()" style="padding-bottom: 20px;">
+							<div class="form-group">
+						      	<label style="color:darkgray" for="Fname">First Name: &nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="Fname" placeholder="Enter First Name" name="Fname" required="" style="border-radius:60px; background:black; border:2px solid green"><span id="Fnamemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+						      	<label style="color:darkgray" for="Lname">Last Name: &nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="Lname" placeholder="Enter Last Name" name="Lname" required="" style="border-radius:60px; background:black; border:2px solid green"><span id="Lnamemsg" required=""></span>
+						    </div><br><br><br>
+
+						    <div class="form-group">
+						     	<label style="color:darkgray" for="Cnumber">Contact No: &nbsp;</label>
+						      	<input type="number" class="form-control" id="Cnumber" placeholder="Enter Contact No" name="Cnumber" required="" style="border-radius:60px; background:black; border:2px solid green"> <span id="mobilemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+						      	<label style="color:darkgray" for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required="" style="border-radius:60px; background:black; border:2px solid green"> <span id="emailmsg"></span>
+						    </div><br><br><br>
+
+						    <div class="form-group">
+						      	<label style="color:darkgray" for="age">Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="number" class="form-control" id="age" placeholder="Enter Age" name="age" required="" style="border-radius:60px; background:black; border:2px solid green"> <span id="agemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-check">
+						    	<label style="color:darkgray">Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+							  	<label style="font-weight: normal; font-size: 17px; color:darkgray" class="form-check-label">
+							    <input type="radio" class="form-check-input" name="gender">Male
+							  	</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+							  	<label style="font-weight: normal; font-size: 17px;color:darkgray" class="form-check-label">
+							    <input type="radio" class="form-check-input" name="gender" style="color:darkgray">Female
+							  	</label><span id="gendermsg"></span>
+							</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+							
+<br><br><br>
+						<input style="font-size: 20px; width: 120px; background: green;margin:auto;color:black"  type="submit" name="" value="SUBMIT" class="btn">		
+						    <input style="font-size: 18px; width: 120px; margin:auto;" type="Reset" name="" value="RESET" class="btn btn-danger">
+						</form>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</section><br> 
+
+	<footer class="bg" style="border-radius:60px; background:green">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4 style="color: black;">@ 2022 Turist of Maharashtra . All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
